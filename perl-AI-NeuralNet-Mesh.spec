@@ -5,7 +5,7 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	AI
 %define	pnam	NeuralNet-Mesh
-Summary:	AI::NeuralNet::Mesh - An optimized, accurate neural network Mesh
+Summary:	AI::NeuralNet::Mesh - an optimized, accurate neural network Mesh
 Summary(pl):	AI::NeuralNet::Mesh - zoptymalizowana, dok³adna sieæ neuronowa Mesh
 Name:		perl-%{pdir}-%{pnam}
 Version:	0.44
