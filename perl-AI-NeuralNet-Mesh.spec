@@ -3,8 +3,8 @@
 %bcond_without	tests	# don't perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	AI
-%define	pnam	NeuralNet-Mesh
+%define		pdir	AI
+%define		pnam	NeuralNet-Mesh
 Summary:	AI::NeuralNet::Mesh - an optimized, accurate neural network Mesh
 Summary(pl):	AI::NeuralNet::Mesh - zoptymalizowana, dok³adna sieæ neuronowa Mesh
 Name:		perl-AI-NeuralNet-Mesh
@@ -24,13 +24,13 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 AI::NeuralNet::Mesh is an optimized, accurate neural network Mesh.
 It was designed with accuracy and speed in mind.
 
-This network model is very flexible.  It will allow for classic binary
+This network model is very flexible. It will allow for classic binary
 operation or any range of integer or floating-point inputs you care
-to provide.  With this you can change activation types on a per node
+to provide. With this you can change activation types on a per node
 or per layer basis (you can even include your own anonymous subs as
-activation types).  You can add sigmoid transfer functions and control
-the threshold.  You can learn data sets in batch, and load CSV data
-set files.  You can do almost anything you need to with this module.
+activation types). You can add sigmoid transfer functions and control
+the threshold. You can learn data sets in batch, and load CSV data
+set files. You can do almost anything you need to with this module.
 This code is designed to be flexible.
 
 %description -l pl
