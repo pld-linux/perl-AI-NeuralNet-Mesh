@@ -5,12 +5,12 @@ Summary:	AI::NeuralNet::Mesh - An optimized, accurate neural network Mesh
 Summary(pl):	AI::NeuralNet::Mesh - zoptymalizowana, dok³adna sieæ neuronowa Mesh
 Name:		perl-%{pdir}-%{pnam}
 Version:	0.44
-Release:	2
+Release:	3
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.zip
 BuildRequires:	perl >= 5.6
-BuildRequires:	rpm-perlprov >= 3.0.3-26
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -44,7 +44,8 @@ zaprojektowany tak, by by³ elastyczny.
 %setup -q -n %{name}-%{version} -c
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 %{!?_without_tests:%{__make} test}
 
@@ -61,7 +62,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%{perl_sitelib}/AI/NeuralNet/*.pm
+%{perl_vendorlib}/AI/NeuralNet/*.pm
 %doc Changes *.htm README
 %dir %{_examplesdir}/%{name}-%{version}
 %attr(755,root,root) %{_examplesdir}/%{name}-%{version}/*.pl
