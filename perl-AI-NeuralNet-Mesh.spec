@@ -6,7 +6,7 @@
 %define		pdir	AI
 %define		pnam	NeuralNet-Mesh
 Summary:	AI::NeuralNet::Mesh - an optimized, accurate neural network Mesh
-Summary(pl):	AI::NeuralNet::Mesh - zoptymalizowana, dok³adna sieæ neuronowa Mesh
+Summary(pl.UTF-8):   AI::NeuralNet::Mesh - zoptymalizowana, dokÅ‚adna sieÄ‡ neuronowa Mesh
 Name:		perl-AI-NeuralNet-Mesh
 Version:	0.44
 Release:	4
@@ -34,18 +34,18 @@ the threshold. You can learn data sets in batch, and load CSV data set
 files. You can do almost anything you need to with this module. This
 code is designed to be flexible.
 
-%description -l pl
-AI::NeuralNet::Mesh to zoptymalizowana, dok³adna sieæ neuronowa Mesh.
-Zosta³a zaprojektowana z my¶l± o dok³adno¶ci i szybko¶ci.
+%description -l pl.UTF-8
+AI::NeuralNet::Mesh to zoptymalizowana, dokÅ‚adna sieÄ‡ neuronowa Mesh.
+ZostaÅ‚a zaprojektowana z myÅ›lÄ… o dokÅ‚adnoÅ›ci i szybkoÅ›ci.
 
 Model sieci jest bardzo elastyczny. Pozwala na klasyczne operacje
-binarne oraz dowolny zakres wej¶æ ca³kowitych lub zmiennoprzecinkowych
-jaki tylko chcemy dostarczyæ. Mo¿na zmieniæ czasy aktywacji dla wêz³ów
-lub warstw (mo¿na nawet do³±czyæ w³asne anonimowe podsieci jako typy
-aktywacji). Mo¿na dodawaæ funkcje transferu sigmoidalnego i kontrolê
-progu. Mo¿na uczyæ zbiorów danych wsadowo i wczytywaæ dane z plików
-CSV. Mo¿na robiæ prawie wszystko co jest potrzebne. Kod jest
-zaprojektowany tak, by by³ elastyczny.
+binarne oraz dowolny zakres wejÅ›Ä‡ caÅ‚kowitych lub zmiennoprzecinkowych
+jaki tylko chcemy dostarczyÄ‡. MoÅ¼na zmieniÄ‡ czasy aktywacji dla wÄ™zÅ‚Ã³w
+lub warstw (moÅ¼na nawet doÅ‚Ä…czyÄ‡ wÅ‚asne anonimowe podsieci jako typy
+aktywacji). MoÅ¼na dodawaÄ‡ funkcje transferu sigmoidalnego i kontrolÄ™
+progu. MoÅ¼na uczyÄ‡ zbiorÃ³w danych wsadowo i wczytywaÄ‡ dane z plikÃ³w
+CSV. MoÅ¼na robiÄ‡ prawie wszystko co jest potrzebne. Kod jest
+zaprojektowany tak, by byÅ‚ elastyczny.
 
 %prep
 %setup -q -c
