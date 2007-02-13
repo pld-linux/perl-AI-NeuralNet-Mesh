@@ -6,7 +6,7 @@
 %define		pdir	AI
 %define		pnam	NeuralNet-Mesh
 Summary:	AI::NeuralNet::Mesh - an optimized, accurate neural network Mesh
-Summary(pl.UTF-8):   AI::NeuralNet::Mesh - zoptymalizowana, dokładna sieć neuronowa Mesh
+Summary(pl.UTF-8):	AI::NeuralNet::Mesh - zoptymalizowana, dokładna sieć neuronowa Mesh
 Name:		perl-AI-NeuralNet-Mesh
 Version:	0.44
 Release:	4
