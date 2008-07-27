@@ -9,7 +9,7 @@ Summary:	AI::NeuralNet::Mesh - an optimized, accurate neural network Mesh
 Summary(pl.UTF-8):	AI::NeuralNet::Mesh - zoptymalizowana, dokładna sieć neuronowa Mesh
 Name:		perl-AI-NeuralNet-Mesh
 Version:	0.44
-Release:	4
+Release:	5
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
