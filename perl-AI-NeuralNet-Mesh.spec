@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# don't perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	AI
 %define		pnam	NeuralNet-Mesh
+%include	/usr/lib/rpm/macros.perl
 Summary:	AI::NeuralNet::Mesh - an optimized, accurate neural network Mesh
 Summary(pl.UTF-8):	AI::NeuralNet::Mesh - zoptymalizowana, dokładna sieć neuronowa Mesh
 Name:		perl-AI-NeuralNet-Mesh
@@ -15,6 +15,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.zip
 # Source0-md5:	5d1c68c7d494da158ce50c263a7d77a1
+URL:		http://search.cpan.org/dist/AI-NeuralNet-Mesh/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	unzip
@@ -64,7 +65,7 @@ rm -rf $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT
 
 install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
-install examples/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
+cp -p examples/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
